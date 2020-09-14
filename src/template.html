@@ -110,7 +110,7 @@
                     },
                 });
                 geojsonlayer.addTo(map);
-                map.fitBounds(geojsonlayer.getBounds(), {maxZoom: maxZoom});
+                map.fitBounds(geojsonlayer.getBounds(), {maxZoom: maxZoom,padding:[-20,-20,-20,-20]});
             {{/if}}
 
             {{#if center}}
